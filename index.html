@@ -3,339 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cakeshop-site</title>
-
+    <link rel="icon" href="cake-images/logo.png.webp" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Cake Shop</title>
 </head>
 <body>
-    
-    <section class="header-section">
-        <div class="logo-display">
-            <a href="www.facebook.com" class="logo-decor">
-                <i class="fa-brands fa-square-facebook" ></i>
-            </a>
-            <a href="www.instagram.com" class="logo-decor" >
-                <i class="fa-brands fa-square-instagram"></i>
-            </a>
-            <a href="www.twitter.com" class="logo-decor">
-                <i class="fa-brands fa-square-twitter"></i>
-            </a>
+    <section id="header">
+        <div class="head">
+            <div class="icons">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook scale-icon"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram scale-icon"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter scale-icon"></i></a>
+            </div>
+            <div class="head-text">
+                <img src="images/logo.png.webp">
+            </div>
+            <div class="call-text">
+                <a href="tel:+919172610965"><button class="call-btn">Call Us : +91 917 2610 965</button> </a>
+            </div>
         </div>
-        <div class="name-logo">
-            <img src="image/logo.png" alt ="logo-img" >
-        </div>
-        <div >
-           <button class="header-button">
-            Call us: +10783 346 4378
-           </button>
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-items"> <a href="#header">HOME</a></li>
+                <li class="nav-items"> <a href="#carousel-section">CAKES</a></li>
+                <li class="nav-items"> <a href="#iframe-section">ABOUT</a></li>
+                <li class="nav-items"> <a href="#blog-section">BLOG</a></li>
+                <li class="nav-items"> <a href="#contact-us-section">CONTACT</a></li>
+            </ul>
+            <button id="menu-btn"> MENU <i class="fa-solid fa-bars"></i> </button>
+            <button id="toggle-mode" onclick="toggleMode()"><i class="fa-solid fa-sun"></i></button>
         </div>
     </section>
-
-    <section class="header2">
-        <div class="header2-apply">
-            <a href="#">HOME</a>
-            <a href="#">CAKE</a>
-            <a href="#">ABOUT</a>
-            <a href="#">BLOG</a>
-            <a href="#">CONTACT</a>
+    <section class="bg-img">
+        <div class="hero-text">
+            <h1>Healthy Made <br> Delicious Cake</h1>
+            <a href="#" target="_blank"><button class="order-btn">ORDER NOW</button></a>
         </div>
     </section>
-
-    <section>
-        <div class="cakebg">
-            <div class="home-text">
-               Healthy Made Delicious Cake
-               <button class="home-botton">ORDER NOW</button>
-             </div>
-        </div>
-    </section>
-    
-    <section>
-     <div class="home-section2-container">
-        <p class="home-section2-header" >This is Schilers. Awesome Food Theme. Purchase it and eat Burgers.</p>
-        <div class="gold-hr"></div>
-
-        <div class="info-container">
-            <div class="text-container">
-                <p class="gold-text">This is Schilers. Awesome Food Theme. Purchase it and eat Burgers.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehen derit in voluptate velit esse cillum.</p>
-                <p>Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehen derit in voluptate velit esse cillum.</p>              
-             </div>
-             <div>
-                 <img src="image/cakeimage2.png" alt="cake image">
-             </div>
-         </div>
-    </div>
-    </section>
-
-    <section>
-    <div class="cakes-container">
-        <div>
-            <div class="cake-div">
-                <img src="image/cake1.jpg" alt="cake1" >
-                <button class="cake-button">Add to cart</button>
+    <section id="burger">
+        <div class="burger-div">
+            <div class="burger-title">
+                This is Schilers. Awesome Food Theme. Purchase it and eat Burgers.
             </div>
-            <div>
-                <p>Sweet Suprise </p>
-                <p class="gold-text">$98.00</p>
-            </div>
-        </div>
-        <div>
-            <div class="cake-div">
-                <img src="image/cake2.jpg" alt="cake2">
-                <button class="cake-button">Add to cart</button>
-            </div>
-            <div>
-                <p>Delitful Lemon</p>
-                <p class="gold-text">$98.00</p>
-            </div>
-        </div>
-        <div>
-            <div class="cake-div">
-                <img src="image/cake3.jpg" alt="alt">
-                <button class="cake-button">Add to cart</button>
-            </div>
-            <div>
-                <p>Cashmere Tank + Bag</p>
-                <p class="gold-text">$98.00</p>
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <section>
-        <div class="video-bg">
-            <img src="image/video-bg.jpg" alt="video-image">
-            <div  class="play-button">
-                <a href="https://www.youtube.com/watch?v=xVWwDc5aNDM" class="play-button-container" target="_blank">
-                    <i class="fas fa-play logo-play"></i>
-                </a> 
+            <div class="detail-grid">
+                <div class="burger-details grid-items">
+                    <h3 class="more-info">This is Schilers. Awesome Food Theme. Purchase it and eat Burgers.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehen derit in voluptate velit esse cillum.</p>
+                    <p>Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehen derit in voluptate velit esse cillum.</p>
+                </div>
+                <div class="burger-cake grid-items">
+                    <img src="images/about1.jpg.webp" alt="cake" />
+                </div>
             </div>
         </div>
     </section>
-    <!-- <section>
-    <div>
-            <p class="home-section2-header" style="width: 700px;">Food Lover's Say</p>
-
-        <div class="grid-container">
-
-            <div class="grid-item item1">
-                    <div class="grid-item item1">
-                        <ul class=" rating" >
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
-                         <p class="grid-text" >"Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.</p>    
-                    <div style="display: flex;"> 
-                        <img src="image/customer1.png.webp" alt="costomer-1" style="margin: 15px 10px;">
-                        <p class="grid-text" style="font-size: 16px;">Wilma Mumduya</p> 
-                    </div>
+    <section id="carousel-section">
+        <div class="carousel">
+            <button id="prev" class="slide-btn"> <i class="fa-solid fa-chevron-left"></i> </button>
+            <div class="item-1">
+                <img src="images/items1.jpg.webp" class="cake-image"> 
+                <button class="add-to-cart-btn"> Add to Cart </button>
+                <h4 class="cake-name">Cashmere Tank + Bag</h4>
+                <h3 class="cake-price">$98.00</h3>
             </div>
-
-            <div class="grid-item item2">
-                    <div class="grid-item item1">
-                        <ul class=" rating" >
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
-                         <p class="grid-text">"Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.</p>
-                    
-                    <div style="display: flex;"> 
-                        <img src="image/customer2.png.webp" alt="costomer-1" style="margin: 15px 10px;">
-                        <p class="grid-text" style="font-size: 16px;">Wilma Mumduya</p> 
-                    </div>
+            <div class="item-2">
+                <img src="images/items2.jpg.webp" class="cake-image">
+                <button class="add-to-cart-btn"> Add to Cart </button>
+                <h4 class="cake-name">Delightful Lemon</h4>
+                <h3 class="cake-price">$98.00</h3>
             </div>
-            <div class="grid-item item3">
-                    <div class="grid-item item1">
-                        <ul class=" rating" >
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                            <li><i class="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
-                         <p class="grid-text">"Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.</p>
-                    
-                    <div style="display: flex;"> 
-                        <img src="image/customer3.png.webp" alt="costomer-1" style="margin: 15px 10px;">
-                        <p class="grid-text" style="font-size: 16px;">Wilma Mumduya</p> 
-                    </div>
+            <div class="item-3">
+                <img src="images/items3.jpg.webp" class="cake-image">
+                <button class="add-to-cart-btn"> Add to Cart </button>
+                <h4 class="cake-name">Sweet Suprise</h4>
+                <h3 class="cake-price">$98.00</h3>
+            </div>
+            <button id="next" class="slide-btn"> <i class="fa-solid fa-chevron-right"></i> </button>
+        </div>
+    </section>
+    <section id="iframe-section">
+        <div class="iframe-div">
+             <a href="https://youtu.be/qnbKFuzJ_lw?si=bxdZMk6q6SOt9gb0" target="_blank"><button id="play-btn"> <i class="fa-solid fa-play"></i> </button></a>
+        </div>
+    </section>
+    <section id="review-section">
+        <p class="review-heading"> Food Lover's Say </p>
+        <div class="review-div">
+            <div class="reviews review-1">
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review-para">
+                    "The best cake bakers as well as the shop, Love it so much!"
+                </div>
+                <div class="profile">
+                    <img src="images/profile1.png" class="profile-img">
+                    <p> Williams Stefan </p>
+                </div>
+            </div>
+            <div class="reviews review-2">
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review-para">
+                    "I never had such a heavenly taste before"
+                </div>
+                                <div class="profile">
+                    <img src="images/profile2.png" class="profile-img">
+                    <p> Christopher </p>
+                </div>
+            </div>
+            <div class="reviews review-3">
+                <div class="rating-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review-para">
+                    "The most delicious cakes and sweets I have eaten in my whole lifetime"
+                </div>
+                                <div class="profile">
+                    <img src="images/profile3.png" class="profile-img">
+                    <p> Sara John </p>
+                </div>
             </div>
         </div>
-    </div>
     </section>
- -->
-
-
-
-
-
-<section>
-    <p class="home-section2-header">Food Lover's Say</p>
-    <div class="grid-container">
-        <div class="grid-item" style="border-left: none;">
-            <div >
-                <ul class=" rating" >
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
+    <section id="blog-section">
+        <div class="blog-header">
+            <p class="review-heading">Our Blogs</p>
+            <a href="https://thecakeblog.com/"><button class="order-btn big-font">MORE BLOG</button></a>
+        </div>
+        <div class="blog-div">
+            <div class="blog-1">
+                <img src="images/blog1.jpg.webp" alt="blog1 image" class="blog-1-img">
+                <div class="blog-txt">
+                    <p class="blog-para">Tomato, black olive, feta & anchovy tart ulla mco laboris </p>
+                    <p class="blog-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip.</p>
+                    <a href="https://donaluzmadrid.com/tomato-black-olive-feta-anchovy-tart" target="_blank"><button class="learn-more-btn"> learn more </button></a>
+                </div>                                                                                  
+            </div>
+            <div class="blog-1">
+                <img src="images/blog2.jpg.webp" alt="blog2 image" class="blog-1-img">
+                <div class="blog-txt">
+                    <p class="blog-para">Tomato, black olive, feta & anchovy tart ulla mco laboris</p>
+                    <p class="blog-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip.</p>
+                    <a href="https://donaluzmadrid.com/tomato-black-olive-feta-anchovy-tart" target="_blank"><button class="learn-more-btn"> learn more </button></a>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section id="insta-section">
+        <div class="head-and-btn">
+            <h1>Follow us on Instagram</h1>
+            <a href="https://www.instagram.com"><button id="fllw-insta"> <i class="fa-brands fa-instagram"> </i> Cakeshop </button></a>
+        </div>
+        <div class="insta-grid">
+            <img src="images/instra1.jpg.webp" alt="cake" class="insta-img">
+            <img src="images/instra2.jpg.webp" alt="cake" class="insta-img">
+            <img src="images/instra3.jpg.webp" alt="cake" class="insta-img">
+            <img src="images/instra4.jpg.webp" alt="cake" class="insta-img">
+        </div>
+    </section>
+    <section id="contact-us-section">
+        <div class="last-header">
+            <div class="contact-section-logo">
+                <img src="images/logo.png.webp">
+            </div>
+            <div class="nav">
+                <ul class="nav-list">
+                <li class="nav-items"> <a href="#header">HOME</a></li>
+                <li class="nav-items"> <a href="#carousel-section">CAKES</a></li>
+                <li class="nav-items"> <a href="#iframe-section">ABOUT</a></li>
+                <li class="nav-items"> <a href="#blog-section">BLOG</a></li>
+                <li class="nav-items"> <a href="#contact-us-section">CONTACT</a></li>
                 </ul>
             </div>
-                     <p class="grid-text" >"Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.</p>    
-                <div style="display: flex;"> 
-                    <img src="image/customer1.png" alt="costomer-1" style="margin: 15px 10px;">
-                    <p class="grid-text" style="font-size: 16px;">Wilma Mumduya</p> 
+        </div>
+        <hr class="low-opacity-hr">
+        <div class="contact-div">
+            <div class="contact-txt">
+                <p class="subtitle contact-para">You can contact us from 9AM to 12AM on the given Contact number. You can also reach out to us at the given location. Click on it to directly jump to Google Maps. Follow us on Instagram, Facebook and Twitter. Thanks for Visiting :) </p>
+                <div class="social-media-btn-div">
+                    <a href="https://www.instagramm.com" target="_blank"><button class="social-media-btns"> <i class="fa-brands fa-instagram"></i> Instagram </button></a>
+                    <a href="https://facebook.com" target="_blank"><button class="social-media-btns"> <i class="fa-brands fa-facebook"></i> Facebook </button></a>
+                    <a href="https://twitter.com" target="_blank"><button class="social-media-btns"> <i class="fa-brands fa-twitter"></i> Twitter </button></a>
                 </div>
-        </div>
-        <div class="grid-item">
-            <div >
-                <ul class=" rating" >
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                </ul>
+            </div> 
+            <div class="location box-padding">
+                <i class="fa-solid fa-location-dot bigger-icon"></i>
+                <h2 class="yellow-txt">Location</h2>
+                <p class="subtitle"><a href="https://www.google.com/maps/search/4736+Poe+Lane,+HOT+SPRINGS,+Montana-59845/@47.6092996,-114.6766419,16z/data=!3m1!4b1?entry=ttu" class="no-underline">4736 Poe Lane, HOT SPRINGS, Montana-59845 </a></p>
             </div>
-                     <p class="grid-text" >"Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.</p>    
-                <div style="display: flex;"> 
-                    <img src="image/customer2.png" alt="costomer-1" style="margin: 15px 10px;">
-                    <p class="grid-text" style="font-size: 16px;">Wilma Mumduya</p> 
-                </div>
-        </div>
-        <div class="grid-item" style="border-right: none;">
-            <div >
-                <ul class=" rating" >
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                </ul>
+            <div class="contact box-padding">
+                <i class="fa-solid fa-phone bigger-icon"></i>
+                <h2 class="yellow-txt">Contact</h2>
+                <p class="subtitle"> <a href="tel:+99134737000" target="_blank">913-473-7000</a></p>
+                <p class="subtitle">contact@cakeshop.com</p>
             </div>
-                     <p class="grid-text" >"Consectetur adipiscing elit, sed do eiusmod tempor dunt ulter labore et dolore magna.</p>    
-                <div style="display: flex;"> 
-                    <img src="image/customer3.png" alt="costomer-1" style="margin: 15px 10px;">
-                    <p class="grid-text" style="font-size: 16px;">Wilma Mumduya</p> 
-                </div>
         </div>
-</div>
-</section>
-
-    <section>
-        <div class="blog-header-container">
-            <p class=" blog-header-text" >Our Blogs</p>
-            <button class="home-botton">MORE BLOG</button>
+        <hr class="low-opacity-hr">
+        <div class="bottomline">
+            <p class="lg-bottomline">Copyright ©2024 All rights reserved | This template is made with <i class="fa-solid fa-heart" style="color: #e5bf4a;"></i>  by <span> <a class="no-underline" href="https://www.colorlib.com" target="_blank">Colorlib </a></span> | Cloned by <a class="no-underline" href="https://github.com/Abdul-Mannan-Codes" target="_blank">Sayyed Abdul Mannan </a></p>
+            <p class="sm-bottomline">Copyright ©2024 All rights reserved <br> This template is made with <i class="fa-solid fa-heart" style="color: #e5bf4a;"></i>  by <span> <a class="no-underline" href="https://www.colorlib.com" target="_blank">Colorlib </a></span> <br> Cloned by <a class="no-underline" href="https://github.com/Abdul-Mannan-Codes" target="_blank"> Sayyed Abdul Mannan </a></p>
         </div>
     </section>
-
-    <section>
-        <div class="grid-container blog-grid-container" >
-            <div class="blog-grid-item item1">
-                <img src="image/blog1.jpg" alt="blog1">
-            </div>
-            <div class="blog-grid-item item2">
-                <p  class="gold-text" >Tomato, black olive, feta & anchovy tart ulla mco laboris</p>
-                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip.</p>
-                <a href="#"  style="color: gold; text-decoration: underline;"> LEARN MORE</a>
-            </div>
-            <div class="blog-grid-item item3">
-                <img src="image/blog2.jpg" alt="blog2">
-            </div>
-            <div class="blog-grid-item item4">
-                <p class="gold-text">Tomato, black olive, feta & anchovy tart ulla mco laboris</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip.</p>
-                <a href="#" style="color: gold; text-decoration: underline;"> LEARN MORE</a>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div>
-            <p class="home-section2-header insta-contact-div">
-                Follow us on Instagram<br>
-                <a href="www.instagram.com">
-                    <button class="header-button" style="padding: 5px 25px;" > 
-                         <P class="logo-decor" ><i class="fa-brands fa-instagram"></i> Cakeshop  </p>
-                    </button>
-                 </a>
-            </p>
-        </div>
-    </section>
-    
-    <section>
-        <div class="insta-img-container">
-        <div><img src="image/instra1.jpg" alt="insta1"></div>
-        <div><img src="image/instra2.jpg" alt="insta2"></div>
-        <div><img src="image/instra3.jpg" alt="insta3"></div>
-        <div><img src="image/instra4.jpg" alt="insta4"></div>
-        </div>
-    </section>
-
-    <section>
-        <div class="footer-header">
-            <img src="image/logo.png" alt="logo">
-            <div class="header2-apply footer-header-text" >
-                <a href="#">HOME</a>
-                <a href="#">CAKE</a>
-                <a href="#">ABOUT</a>
-                <a href="#">BLOG</a>
-                <a href="#">CONTACT</a>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="footer-div-container">
-            <div class="footer-div" style="width: 60%">
-               <p>Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button class="footer-button"> 
-                    <P class="logo-decor" ><i class="fa-brands fa-instagram"></i> Instagram  </p>
-                </button>
-                <button class="footer-button"> 
-                    <P class="logo-decor" ><i class="fa-brands fa-facebook"></i> facebook </p>
-                </button>
-                <button class="footer-button"> 
-                    <P class="logo-decor" ><i class="fa-brands fa-twitter"></i> twitter  </p>
-                </button>
-            </div>
-            <div class="footer-div">
-                    <div class="logo-decor" style="color: white;" >
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <p style="color: gold; font-size: 25px;">Location</p>
-                    <p>4736 Poe Lane,Hot SPRINGS, Montana-59845</p>
-            </div>
-            <div class="footer-div">
-                    <div class="logo-decor" style="color: white;" >
-                        <i class="fa-solid fa-phone"></i>
-                        </div>
-                    <p style="color: gold; font-size: 25px;">Contact</p>
-                    <p>
-                       913-473-7000
-                       contact@cakeshop.com
-                    </p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <p style="text-align: center;">Copyright @2024 All rights reserveed | This Website is made with <i class="fa-solid fa-heart"></i> By Waheba</p>
-    </section>
+    <script src="script.js"></script>
 </body>
 </html>
